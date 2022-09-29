@@ -1,0 +1,52 @@
+body {
+    color: #212121;
+    background-color: #FFFFFF;
+}
+
+ul {
+    list-style: none;
+}
+
+/*Logo*/
+.logo {
+    color: #2196F3;
+}
+.logo-header {
+    color: #000000;
+}
+.logo-footer {
+    color: #FFFFFF;
+}
+
+
+/*site-nav*/
+
+.site-nav a {
+color: #212121;
+}
+
+.contacts-nav .link {
+    color: #757575;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+    color: #2196F3;
+}
+
+
+
+
+
+.section-text {
+    color: #757575;
+}
+
+
+
+/*Підвал */
+.footer {
+    background-color: #2F303A;
+}

@@ -1,15 +1,28 @@
+/*Змінні*/
+
+:root {
+    --primary-text-color: #212121;
+    --section-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-bg-color:#FFFFFF;
+    --secondary-bg-color:#2F303A;
+}
+
+
+/*Для всього сайту*/
 body {
-    color: #212121;
-    background-color: #FFFFFF;
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
 }
 
 ul {
     list-style: none;
 }
 
+
 /*Logo*/
 .logo {
-    color: #2196F3;
+    color: var(--accent-color)
 }
 .logo-header {
     color: #000000;
@@ -22,31 +35,47 @@ ul {
 /*site-nav*/
 
 .site-nav a {
-color: #212121;
+color: var(--primary-text-color)
 }
 
 .contacts-nav .link {
-    color: #757575;
+    color: var(--section-text-color)
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color)
+}
+
+
+/*Hero*/
+
+.hero {
+background-color:var(--secondary-bg-color);
+}
+.hero-title {
+    color: #FFFFFF;
 }
 
 
 
 
-
 .section-text {
-    color: #757575;
+    color: var(--section-text-color)
 }
 
 
 
 /*Підвал */
 .footer {
-    background-color: #2F303A;
+    background-color:var(--secondary-bg-color);
+}
+
+/*Button*/
+.button {
+    color: #FFFFFF;
+    background-color: #2196F3;
+    
 }

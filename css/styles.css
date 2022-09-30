@@ -49,6 +49,9 @@ color: var(--primary-text-color)
     color: var(--accent-color)
 }
 
+.site-nav .link.current {
+    color: var(--accent-color);
+}
 
 /*Hero*/
 

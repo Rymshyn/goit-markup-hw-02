@@ -8,6 +8,7 @@
     --secondary-bg-color:#2F303A;
     --primary-button-color: #F5F4FA;
     --primary-black-color: #000000;
+    --hero-button-color: #188CE8;
 }
 
 
@@ -23,11 +24,24 @@ ul {
     list-style: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 
 /*Логотип*/
 .logo {
     color: var(--accent-color);
-    font-family: 'Raleway';
+    font-family: Raleway, sans-serif ;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -55,7 +69,6 @@ ul {
 
 .contacts-nav .link {
     color: var(--section-text-color);
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -143,10 +156,6 @@ background-color: var(--primary-bg-color);
 }
 
 
-
-
-
-
 /*Підвал */
 .footer {
     background-color: var(--secondary-bg-color);
@@ -168,7 +177,7 @@ background-color: var(--primary-bg-color);
 .hero-button {
     color: var(--primary-bg-color);
     background-color:var(--accent-color);
-    font-family: 'Roboto';
+    font-family: inherit
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -176,12 +185,11 @@ background-color: var(--primary-bg-color);
     letter-spacing: 0.06em;
     cursor: pointer;
 }
-
-.portfolio-button:hover,
-.portfolio-button:focus {
-    color: var(--primary-bg-color);
-    background-color: var(--accent-color);
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hero-button-color);
 }
+
 .portfolio-button {
     color: var(--primary-text-color);
     background-color: var(--primary-button-color);
@@ -190,4 +198,10 @@ background-color: var(--primary-bg-color);
     font-size: 16px;
     line-height: 1.62;
     cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
 }
